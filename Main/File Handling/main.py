@@ -23,3 +23,14 @@ with open("data.txt","r") as f:
             lst.append(k.lower())
     for j in set(lst):
         print(j +" Occur " +  str(lst.count(j)) + " Times")
+
+
+#Question: Write a Python program that reads the contents of a text file named "input.txt" (assuming the file exists) and writes the same content to 
+#another text file named "output.txt." Additionally, add a line at the end of the "output.txt" file that says "File copied successfully."
+
+#Answer
+with open("input.txt","r") as f:
+    a = f.readlines()
+    a.append("\nFile copied successfully.")
+with open("output.txt","w") as n:
+    n.writelines(a)
