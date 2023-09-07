@@ -16,3 +16,13 @@ def average(lst):
         dict = {item["Name"]:str((item["Math"] + item["Science"] + item["History"])/3)}
         lst1.append(dict)
     return lst1
+
+#Question: Write a Python function that takes a list of dictionaries as input, where each dictionary represents a product with attributes like "name," "price," and "quantity." 
+    #The function should calculate the total value of all products in the list, considering the price and quantity of each product. It should return the total value.
+
+def total(lst):
+    lst1 = []
+    for item in lst:
+        dict = {item["name"]:str(item["price"]*item["quantity"])}
+        lst1.append(dict)
+    return lst1
