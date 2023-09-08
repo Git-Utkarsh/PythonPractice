@@ -6,3 +6,15 @@ def factorial(n):
     if n == 1 or n == 0:
         return 1 
     return n * factorial(n-1)
+
+
+#Question: Write a Python function that takes a list of integers as input and returns a new list containing only the even numbers from the original list.
+
+#Answer
+def even(lst):
+    lst1 = []
+    for item in lst:
+        if item%2==0:
+            lst1.append(item)
+    return lst1
+print(even([1,2,3,4,5,6]))
