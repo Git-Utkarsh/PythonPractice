@@ -1,4 +1,4 @@
-const apiKey = "API-Key";
+const apiKey = "<API-Key>";
 
 window.oRTCPeerConnection =
     window.oRTCPeerConnection || window.RTCPeerConnection;
