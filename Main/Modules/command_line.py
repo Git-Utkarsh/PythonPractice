@@ -46,7 +46,6 @@ parser.add_argument("-o", "--output", type=str, help="Name of the file", default
 # Parse the arguments
 args = parser.parse_args()
 
-# Use the arguments in your code
 print(args.url)
 print(args.output, type(args.output))
 download_file(args.url, args.output)
